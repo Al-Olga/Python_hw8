@@ -27,7 +27,9 @@ def decrypt_caesar(msg, shift=3):
     return encrypt_caesar(msg, -1 * shift)
 
 
+print('Введите ключ шифрования: ')
+n = int(input())
 print("Введите строку для шифрования: ")
-str = encrypt_caesar(input(), 5)
+str = encrypt_caesar(input(), n)
 print(str)
-print(decrypt_caesar(str, 5))
+print(decrypt_caesar(str, n))
